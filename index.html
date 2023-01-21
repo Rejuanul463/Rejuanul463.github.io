@@ -1,95 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Rizwan Game Developer</title>
+    <link rel="stylesheet" href="./Assets/css/aos.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="left">
-            <div class="profile">
-                <img src="./image/Riz.JPG" alt="riz_image">
-                <div>
-                    <h3 class="leftHead">Contacts:</h3>
-                    <p class="leftHead"> 
-                        &ensp;&ensp;&ensp;<i class="fa fa-phone-square" aria-hidden="true"></i>&ensp;01677******<br>
-                        &ensp;&ensp;&ensp;<i class="fa fa-envelope" aria-hidden="true"></i>&ensp;rejuanulhuq@gmail.com<br>
-                        &ensp;&ensp;&ensp;<i class="fa fa-linkedin-square" aria-hidden="true"></i>&ensp;Rizwan Chowdhury<br>
-                        &ensp;&ensp;&ensp;<i class="fa fa-github-alt" aria-hidden="true"></i> <span>Rejuanul463</span>
-                    </p>
-                </div>
-                <div>
-                    <h3 class="leftHead">Education</h3>
-                    <ul class="leftHead">
-                        <li>B.Sc in Computer Science and Engineering.</li>
-                        <span>University of Rajshahi<br>
-                        <span>2010-2014</span>
-                    </ul>
-                </div>
-                <div class="leftHead">
-                    <p>
-                        <b style="font-size: 20px;">Hobbies and Intersts</b><br>
-                        <ul>
-                            <li>Cricket and Football</li>
-                            <li>Reading novels.</li>
-                            <li>Listening to music.</li>
-                            <li>Travelling.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="right">
-            <div class="highlights">
-                <h1>Rejuanul Huq Sanny</h1>
-                <span>Software Engineer</span>
-                <h3>CV Highlight</h3>
-                <ul>
-                    <li>Currently going through CS253 – Web Application Engineering and CS61A – Structure & Interpretation of Computer Programs</li>
-                    <li>Learnt basic Python, JavaScript, HTML, CSS.</li>
-                    <li>An independent, dedicated, efficient person. These attributes are proved through the series of courses I have taken or I am taking as of now independently through online platforms</li>
-                    <li>Good Communication Skills, Presentation Skills, attitude towards leadership, authorisation and delegation, conflict resolution and negotiation and a very good team worker.</li>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class="h3 fw-bold d-block d-lg-none">Rizwan</span>
+                <img src="./Assets/images/Rizwan.jpg" class="d-none d-lg-block rounded-circle" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li>
+                    <div class="col-auto pt-4">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/rizDarius7"><i class="lab la-facebook"></i></a>
+                            <a href="https://www.instagram.com/dar1us_7/"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/rizwan-chowdhury-582553250/"><i class="lab la-linkedin"></i></a>
+                            <a href="https://github.com/Rejuanul463"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+
                 </ul>
-                
-                <h3>Professional Experience</h3>
-                <h4 id="company-name">Wingify Software Pvt Ltd</h4>
-                <p id="job-title"><strong>Support Engineer (Technical Support)</strong></p>
-                <p id="job-responsibilities">Job Responsbilities</p>
-                <p>
-                <ul>
-                    <li>Answer customer queries over email / ticketing system</li>
-                    <li>Interact with our engineering team to get software issues and bugs resolved</li>
-                    <li>Occasionally interact with customers over Skype or telephone</li>
-                    <li>Contribute ideas to the team on how customers can be delighted</li></ul>
-                </p>
-                <h3>Technical Skills</h3>
-                <p>
-                <ul>
-                    <li>
-                    <span id="course-name">Operating Systems:</span> DOS, Windows 98, Windows 2000, Windows XP, Windows NT, Windows Server 2003, Windows Vista, Windows 7, Macintosh Computers (OS X), Linux (Ubuntu, Fedora)</li>
-                    <li>
-                    <span id="course-name">Application Software:</span> Office 97-2003; Office XP, Office 2007, Office for Mac 2011, iWork ’09, Sage Accounting Software, Sage 50 (Accounting Software), Excel 2003/2007 for Financial Modelling spreadsheets.</li>
-                    <li>
-                    <span id="course-name">Programming Skills:</span>HTML, CSS, Python, JavaScript, learning C and C++</li></ul>
-                </p>
-                <p>
-                    <b style="font-size: 20px;">languages</b>
-                    <ul>
-                        <li>Bangla.</li>
-                        <li>English.</li>
-                        <li>German.</li>
-                        <li>Japanese.</li>
-                    </ul>
-                </p>
             </div>
         </div>
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Content wrapper -->
+    <div id="content-wrapper">
+        <!-- Home -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">GAME
+                                DEVELOPER</span> FROM BANGLADESH </h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Rizwan. I am a game
+                            programmer with over 3 years of experience in gaming field. Helped launch start-up online
+                            gaming forum in 2021. Worked on a team that developed 3 products for 1 years in a row. </p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-4">Explore My Work</a>
+                            <a href="#" class="link-custom">Call: (+880) 1677-652072</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //Home -->
+
+        <!-- services -->
+        <section id="services" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">SERVICES</h6>
+                        <h1>Services That I Provide</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4">
+
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="services p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-3">
+                                <i class="las la-feather-alt"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Game Design</h5>
+                            <p>I make 3D and 2D games for windows/ios/android devices</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="services p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-3">
+                                <i class="las la-feather-alt"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Game Programming</h5>
+                            <p>I make 3D and 2D games for windows/ios/android devices</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="services p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-3">
+                                <i class="las la-feather-alt"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Script Writting</h5>
+                            <p>I make 3D and 2D games for windows/ios/android devices</p>
+                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /services -->
+
+        <!-- Work -->
+        <section id="work" class="full-height px-lg-5">
+            <div class="container">
+
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">Work</h6>
+                        <h1>My Recent</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-4" data-aos="fade-up">
+                    <div class="col-md-6">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./Assets/images/project1.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Mystrey Vault</h4>
+                                <p>Its a game made of unity that is about a vault that turns into some battle-field after some interval</p>
+                                <a href="https://mishanto.itch.io/the-mystery-vault" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./Assets/images/project2.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Mystrey Vault 2</h4>
+                                <p>Its a game made of unity that is about a vault that turns into some battle-field after some interval</p>
+                                <a href="https://mishanto.itch.io/the-mystery-vault" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./Assets/images/project3.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Salvation</h4>
+                                <p>Its a game made of unity that is about a vault that turns into some battle-field after some interval</p>
+                                <a href="https://mishanto.itch.io/salvation" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="900">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="./Assets/images/project4.png" alt="">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>Salvation 2</h4>
+                                <p>Its a game made of unity that is about a vault that turns into some battle-field after some interval</p>
+                                <a href="https://mishanto.itch.io/salvation" class="link-custom">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /Work -->
+
+        <!-- About -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+                
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">About</h6>
+                        <h1>My Education & Experience</h1>
+                    </div>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12"data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Bachelor of Computer Science</h5>
+                                    <p class="text-brand mb-2">University of Rajshahi(2020-now)</p>
+                                    <p class="mb-0">Learning development languages, framworks and algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12"data-aos="fade-up" data-aos-delay="900">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h5>Higher Secondary School</h5>
+                                    <p class="text-brand mb-2">Willes Little Flower (2017-2019)</p>
+                                    <p class="mb-0">I have accuared basic education from science background.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+                    <div class="row gy-4">
+
+                        <div class="col-12"data-aos="fade-up" data-aos-delay="600">
+                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <h5>Game Developer</h5>
+                                <p class="text-brand mb-2">Indie Game Development Team(2022-now)</p>
+                                <p class="mb-0">Working as a senior game developer. I working in the part of AI.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-12"data-aos="fade-up" data-aos-delay="900">
+                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <h5>Game Developer</h5>
+                                <p class="text-brand mb-2">Game Developers RU (2020-2022)</p>
+                                <p class="mb-0">Worked in various field of game development.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            </div>
+        </section>
+        <!-- /About -->
+
+        <!-- Contacts -->
+        <section id="contacts" class="full-height px-lg-5">
+            <div class="container">
+                
+                <div class="row justify-content-center text-center" data-aos="fade-up">
+                    <div class="col-lg-8 pb-4">
+                        <h6 class="text-brand">CONTACTS</h6>
+                        <h1>Interested in Working together? Let's talk</h1>
+                    </div>
+
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                        <form action="#" class="row g-lg-3 gy-3">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" placeholder="Enter your name">
+                            </div>
+                            
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" placeholder="Enter subject">
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <textarea name="" class="form-control" rows="4" placeholder="Enter your massage"></textarea>
+                            </div>
+
+                            <div class="form-group col-md-12 display-grid">
+                                <button type="submit" class="btn btn-brand">Contact me</button>    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+        <!-- /Contacts -->
+
+         <!-- FOOTER -->
+         <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">Find me on <a href="#" class="fw-bold">Social Media</a></p>
+                    </div>
+                    <div class="col-auto">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/rizDarius7"><i class="lab la-facebook"></i></a>
+                            <a href="https://www.instagram.com/dar1us_7/"><i class="lab la-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/rizwan-chowdhury-582553250/"><i class="lab la-linkedin"></i></a>
+                            <a href="https://github.com/Rejuanul463"><i class="lab la-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //FOOTER -->
+
     </div>
+    <!-- /Content wrapper -->
+
+    <script src="./Assets/js/aos.js"></script>
+    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/js/main.js"></script>
 </body>
+
 </html>
