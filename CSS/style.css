@@ -1,0 +1,84 @@
+:root {
+    --color-base: #363636;
+    --color-background1: #13839B;
+    --color-background2: #000;
+    --color-background3: #9a9a9a;
+    --color-text: #ffffff;
+    --color-icon: #cd3e47ac;
+    /* --sidbar-width: 250px; */
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+   
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 70%;
+    }
+    
+}
+
+body {
+    background-image: url(../images/backGray.jpg);
+}
+
+h2 {
+    color: black;
+    font-weight: 700;
+}
+
+img {
+    margin-top: 10%;
+    max-width: auto;
+    height: auto;
+    filter: grayscale(80%);
+}
+
+body{
+    background-color: var(--color-base);
+}
+.row{
+    margin-top: 5%;
+}
+
+.container {
+    background-image: url('../images/background.webp');
+    background-repeat: inherit;
+    background-size: 120%;
+}
+
+.form {
+    padding-top: 5%;
+    background-color: transparent;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-radius: 0%;
+    border-color: #363636;
+}
+.form:focus {
+    padding-top: 5%;
+    background-color: transparent;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-radius: 0%;
+    border-color: #363636;
+}
+
+
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: var(--color-base);
+}
+
+.form {
+
+}
