@@ -3,289 +3,246 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rizwan Game Developer</title>
-    <link rel="stylesheet" href="./Assets/css/aos.css">
-    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <title>Rejuanul Huq Sanny | Game Developer</title>
+    <meta name="description" content="Portfolio of Rejuanul Huq Sanny, a Unity game developer and Computer Science graduate from Bangladesh.">
+    <meta name="theme-color" content="#0a0a12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body>
+    <div class="scroll-progress" id="progress"></div>
+    <div class="cursor-glow" id="glow"></div>
+    <div class="bg-blobs" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-dark fixed-top">
-        <div class="container flex-lg-column">
-            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
-                <span class="h3 fw-bold d-block d-lg-none">Rizwan</span>
-                <img src="./Assets/images/Rizwan.jpg" class="d-none d-lg-block rounded-circle" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+    <header class="nav" id="nav">
+        <a href="#home" class="nav-logo">
+            <img src="./Assets/images/Rizwan.jpg" alt="Rejuanul">
+            <span>Sanny<b>.</b></span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><i class="las la-bars"></i></button>
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </nav>
+    </header>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <div class="col-auto pt-4">
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/rizDarius7" target="_blank"><i class="lab la-facebook"></i></a>
-                            <a href="https://www.instagram.com/dar1us_7/" target="_blank"><i class="lab la-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/rizwan-chowdhury-582553250/" target="_blank"><i class="lab la-linkedin"></i></a>
-                            <a href="https://github.com/Rejuanul463"><i class="lab la-github" target="_blank"></i></a>
-                        </div>
-                    </div>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- /Navbar -->
-
-    <!-- Content wrapper -->
-    <div id="content-wrapper">
+    <main>
         <!-- Home -->
-        <section id="home" class="full-height px-lg-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h5 class="fw-bold text-brand" data-aos="fade-up">
-                            Rizwan Chowdhury Sunny
-                        </h5>
-                        <h1 class="display-4 fw-bold" data-aos="fade-up">I'M A <span class="text-brand">GAME
-                                DEVELOPER</span> FROM BANGLADESH </h1>
-                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">I am Rizwan. I am a game
-                            programmer with over 3 years of experience in gaming field. Helped launch start-up online
-                            gaming forum in 2021. Worked on a team that developed 3 products for 1 years in a row. </p>
-                        <div data-aos="fade-up" data-aos-delay="600">
-                            <a href="#work" class="btn btn-brand me-4">Explore My Work</a>
-                            <a href="#" class="link-custom">Call: (+880) 1677-652072</a>
-                        </div>
+        <section id="home" class="hero">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <p class="eyebrow reveal"><span class="dot"></span> Junior Game Developer at Spark-Tech Agency</p>
+                    <h1 class="reveal">Hi, I'm <span class="grad">Rejuanul</span>.<br>I build <span class="typed" id="typed"></span><span class="caret"></span></h1>
+                    <p class="lead reveal">Self-taught Unity game developer and fresh Computer Science &amp; Engineering graduate from Thakurgaon, Bangladesh. I plan projects, design levels and program gameplay and NPC AI, and I'm always learning new tech.</p>
+                    <div class="hero-actions reveal">
+                        <a href="#work" class="btn btn-primary">Explore my work <i class="las la-arrow-right"></i></a>
+                        <a href="mailto:rejuanulsanny@gmail.com" class="btn btn-ghost"><i class="las la-envelope"></i> Email me</a>
                     </div>
+                    <div class="stats reveal">
+                        <div><strong data-count="4">0</strong><span>Years in game dev</span></div>
+                        <div><strong data-count="7">0</strong><span>Games showcased</span></div>
+                        <div><strong>6th</strong><span>Brainstation Game Jam</span></div>
+                    </div>
+                </div>
+                <div class="hero-art reveal">
+                    <div class="avatar-ring">
+                        <img src="./Assets/images/Rizwan.jpg" alt="Portrait of Rejuanul">
+                    </div>
+                    <span class="chip c1"><i class="las la-gamepad"></i> Unity</span>
+                    <span class="chip c2"><i class="las la-code"></i> C#</span>
+                    <span class="chip c3"><i class="las la-robot"></i> NPC AI</span>
+                </div>
+            </div>
+            <a href="#services" class="scroll-hint" aria-label="Scroll down"><i class="las la-angle-down"></i></a>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <h6>Services</h6>
+                    <h2>What I can do for you</h2>
+                </div>
+                <div class="grid-3">
+                    <article class="card tilt reveal">
+                        <div class="icon"><i class="las la-drafting-compass"></i></div>
+                        <h3>Game Design</h3>
+                        <p>Project planning, level design and balancing for 2D and 3D games.</p>
+                    </article>
+                    <article class="card tilt reveal" style="--d:.1s">
+                        <div class="icon"><i class="las la-laptop-code"></i></div>
+                        <h3>Game Programming</h3>
+                        <p>Gameplay mechanics, player controllers, enemy movement and NPC AI in Unity (C#), with some Unreal Engine 4/5.</p>
+                    </article>
+                    <article class="card tilt reveal" style="--d:.2s">
+                        <div class="icon"><i class="las la-globe"></i></div>
+                        <h3>Web &amp; App Development</h3>
+                        <p>Websites and apps with Laravel and Flutter, backed by MySQL or PostgreSQL.</p>
+                    </article>
                 </div>
             </div>
         </section>
-        <!-- //Home -->
-
-        <!-- services -->
-        <section id="services" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">SERVICES</h6>
-                        <h1>Services That I Provide</h1>
-                    </div>
-                </div>
-
-                <div class="row gy-4">
-
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="services p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-3">
-                                <i class="las la-feather-alt"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Game Design</h5>
-                            <p>I make 3D and 2D games for windows/ios/android devices</p>
-                            <a href="#" class="link-custom">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="services p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-3">
-                                <i class="las la-feather-alt"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Game Programming</h5>
-                            <p>I make 3D and 2D games for windows/ios/android devices</p>
-                            <a href="#" class="link-custom">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="services p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-3">
-                                <i class="las la-feather-alt"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Script Writting</h5>
-                            <p>I make 3D and 2D games for windows/ios/android devices</p>
-                            <a href="#" class="link-custom">Read More</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- /services -->
 
         <!-- Work -->
-        <section id="work" class="full-height px-lg-5">
-            <div class="container">
-
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">Work</h6>
-                        <h1>My Recent</h1>
+        <section id="work" class="section">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <h6>Work</h6>
+                    <h2>Recent projects</h2>
+                </div>
+                <div class="grid-2">
+                    <a class="project tilt reveal" href="https://mishanto.itch.io/the-mystery-vault" target="_blank" rel="noopener">
+                        <div class="thumb"><img src="./Assets/images/project1.png" alt="Mystery Vault screenshot" loading="lazy"></div>
+                        <div class="body">
+                            <h3>Mystery Vault <i class="las la-arrow-right"></i></h3>
+                            <p>A Unity game about a vault that turns into a battlefield after a set interval.</p>
+                            <span class="tag">Unity</span>
+                        </div>
+                    </a>
+                    <a class="project tilt reveal" style="--d:.1s" href="https://jahangir1x.itch.io/shokti-doi-demo-hybrid-build" target="_blank" rel="noopener">
+                        <div class="thumb"><img src="./Assets/images/Project2.png" alt="Shokti Doi advertisement game screenshot" loading="lazy"></div>
+                        <div class="body">
+                            <h3>Shokti Doi Advertisement <i class="las la-arrow-right"></i></h3>
+                            <p>A Unity game built as an interactive advertisement for a product.</p>
+                            <span class="tag">Unity</span><span class="tag">Advergame</span>
+                        </div>
+                    </a>
+                    <a class="project tilt reveal" href="https://mishanto.itch.io/salvation" target="_blank" rel="noopener">
+                        <div class="thumb"><img src="./Assets/images/project3.png" alt="Salvation screenshot" loading="lazy"></div>
+                        <div class="body">
+                            <h3>Salvation <i class="las la-arrow-right"></i></h3>
+                            <p>A story-driven Unity game built around the theme "Bad is Good".</p>
+                            <span class="tag">Unity</span><span class="tag">Story</span>
+                        </div>
+                    </a>
+                    <a class="project tilt reveal" style="--d:.1s" href="https://itch.io/jam/gamejamplus-2526-10th-edition-/rate/4061020" target="_blank" rel="noopener">
+                        <div class="thumb"><img src="./Assets/images/project4.png" alt="JulyBidroho screenshot" loading="lazy"></div>
+                        <div class="body">
+                            <h3>JulyBidroho <i class="las la-arrow-right"></i></h3>
+                            <p>My proudest project, made for Game Jam Plus, an international jam. Our team reached the quarter-finals against teams from across Asia.</p>
+                            <span class="tag">Game Jam</span><span class="tag">Quarter-finalist</span>
+                        </div>
+                    </a>
+                    <div class="project tilt reveal">
+                        <div class="thumb placeholder"><i class="las la-cat"></i></div>
+                        <div class="body">
+                            <h3>Nyaan Express</h3>
+                            <p>A small 3D promotional game for a product (Jan - Mar 2024). I built player controls, UI and level design.</p>
+                            <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">3D</span>
+                        </div>
+                    </div>
+                    <div class="project tilt reveal" style="--d:.1s">
+                        <div class="thumb placeholder"><i class="las la-city"></i></div>
+                        <div class="body">
+                            <h3>Lost In Abandoned City</h3>
+                            <p>A 2D top-down role-playing game (Aug - Nov 2021). I implemented the player controller and NPC behaviours.</p>
+                            <span class="tag">Unity</span><span class="tag">C#</span><span class="tag">2D RPG</span>
+                        </div>
+                    </div>
+                    <div class="project tilt reveal">
+                        <div class="thumb placeholder"><i class="las la-trophy"></i></div>
+                        <div class="body">
+                            <h3>Game Jam Entries</h3>
+                            <p>Placed 300th in the Brackeys Game Jam (2021) and 6th in the Brainstation Game Jam (2023). I built enemy movement, enemy AI and moving platforms.</p>
+                            <span class="tag">Unity</span><span class="tag">Enemy AI</span><span class="tag">6th place</span>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row gy-4" data-aos="fade-up">
-                    <div class="col-md-6">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./Assets/images/project1.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Mystrey Vault</h4>
-                                <p>Its a game made of unity that is about a vault that turns into some battle-field after some interval</p>
-                                <a href="https://mishanto.itch.io/the-mystery-vault" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./Assets/images/Project2.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>SoktiDoi-Adverisement</h4>
-                                <p>Its a game made of unity which was for advertisement of a product</p>
-                                <a href="https://jahangir1x.itch.io/shokti-doi-demo-hybrid-build?fbclid=IwY2xjawMC62pleHRuA2FlbQIxMQABHiMAmsi1kxQDg5WHdT3WbiSF2MN2f4XYWd9yydvPirXgo-Xj6NLJOrxydToz_aem_ahDbanK2ncrqr5r-n-8j2w" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./Assets/images/project3.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>Salvation</h4>
-                                <p>Its a game made of unity that is a story type game and the theme is Bad is Good</p>
-                                <a href="https://mishanto.itch.io/salvation" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="900">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./Assets/images/project4.png" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <h4>JulyBidroho</h4>
-                                <p>Its a game made of unity which is mainly based on uprising of July.</p>
-                                <a href="https://rejuanul.itch.io/" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
-        <!-- /Work -->
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <h6>Skills</h6>
+                    <h2>Tools of the trade</h2>
+                </div>
+                <div class="grid-3">
+                    <div class="card reveal"><h3>Languages</h3><div class="tags"><span class="tag">C#</span><span class="tag">C++</span><span class="tag">C</span><span class="tag">Java</span><span class="tag">Python</span></div></div>
+                    <div class="card reveal" style="--d:.1s"><h3>Engines &amp; Frameworks</h3><div class="tags"><span class="tag">Unity3D</span><span class="tag">Unreal 4 &amp; 5</span><span class="tag">SFML</span><span class="tag">Flutter</span><span class="tag">Laravel</span></div></div>
+                    <div class="card reveal" style="--d:.2s"><h3>Tools &amp; Databases</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Laragon</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div></div>
+                </div>
+                <p class="reveal langs">Spoken languages: Bangla (native), English (fluent)</p>
+            </div>
+        </section>
 
         <!-- About -->
-        <section id="about" class="full-height px-lg-5">
-            <div class="container">
-                
-                <div class="row pb-4" data-aos="fade-up">
-                    <div class="col-lg-8">
-                        <h6 class="text-brand">About</h6>
-                        <h1>My Education & Experience</h1>
+        <section id="about" class="section">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <h6>About</h6>
+                    <h2>Education &amp; experience</h2>
+                </div>
+                <div class="grid-2 timelines">
+                    <div>
+                        <h3 class="col-title reveal"><i class="las la-graduation-cap"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="item reveal">
+                                <span class="when">2020 - 2025</span>
+                                <h4>B.Sc. in Computer Science &amp; Engineering</h4>
+                                <p class="org">University of Rajshahi &middot; CGPA 3.64</p>
+                                <p>Data Structures &amp; Algorithms, OOP, Design Patterns, Computer Graphics, Deep Learning, Databases, Operating Systems, Networks and Web Engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="col-title reveal"><i class="las la-briefcase"></i> Experience</h3>
+                        <div class="timeline">
+                            <div class="item reveal">
+                                <span class="when">Nov 2025 - now</span>
+                                <h4>Junior Game Developer</h4>
+                                <p class="org">Spark-Tech Agency</p>
+                                <p>Project planning and coordination, level design and balancing, gameplay programming and mechanics.</p>
+                            </div>
+                            <div class="item reveal">
+                                <span class="when">Jun 2022 - Mar 2025</span>
+                                <h4>Game Developer</h4>
+                                <p class="org">PatiHash</p>
+                                <p>Project planning and coordination, level design and NPC programming.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row gy-5">
-                    <div class="col-lg-6">
-                        
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12"data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>Bachelor of Computer Science</h5>
-                                    <p class="text-brand mb-2">University of Rajshahi(2020-now)</p>
-                                    <p class="mb-0">Learning development languages, framworks and algorithms.</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12"data-aos="fade-up" data-aos-delay="900">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h5>Higher Secondary School</h5>
-                                    <p class="text-brand mb-2">Willes Little Flower (2017-2019)</p>
-                                    <p class="mb-0">I have accuared basic education from science background.</p>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-lg-6">
-                    <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
-                    <div class="row gy-4">
-
-                        <div class="col-12"data-aos="fade-up" data-aos-delay="600">
-                            <div class="bg-base p-4 rounded-4 shadow-effect">
-                                <h5>Game Developer</h5>
-                                <p class="text-brand mb-2">Indie Game Development Team(2022-now)</p>
-                                <p class="mb-0">Working as a senior game developer. I working in the part of AI.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12"data-aos="fade-up" data-aos-delay="900">
-                            <div class="bg-base p-4 rounded-4 shadow-effect">
-                                <h5>Game Developer</h5>
-                                <p class="text-brand mb-2">Game Developers RU (2020-2022)</p>
-                                <p class="mb-0">Worked in various field of game development.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-            </div>
             </div>
         </section>
-        <!-- /About -->
 
-         <!-- FOOTER -->
-         <footer class="py-5 px-lg-5">
-            <div class="container">
-                <div class="row gy-4 justify-content-between">
-                    <div class="col-auto">
-                        <p class="mb-0">Find me on <a href="#" class="fw-bold">Social Media</a></p>
-                    </div>
-                    <div class="col-auto">
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/rizDarius7"><i class="lab la-facebook"></i></a>
-                            <a href="https://www.instagram.com/dar1us_7/"><i class="lab la-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/rejuanul-huq-sanny-73ba13367/"><i class="lab la-linkedin"></i></a>
-                            <a href="https://github.com/Rejuanul463"><i class="lab la-github"></i></a>
-                        </div>
+        <!-- Contact -->
+        <section id="contact" class="section">
+            <div class="wrap">
+                <div class="cta reveal">
+                    <h2>Let's make something <span class="grad">fun</span> together.</h2>
+                    <p>Looking for a game developer or a jam teammate? Get in touch.</p>
+                    <a href="mailto:rejuanulsanny@gmail.com" class="btn btn-primary"><i class="las la-envelope"></i> rejuanulsanny@gmail.com</a>
+                    <p class="phone"><a href="tel:+8801677652072"><i class="las la-phone"></i> (+880) 1677-652072</a> &middot; Thakurgaon, Bangladesh</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rizDarius7" target="_blank" rel="noopener" aria-label="Facebook"><i class="lab la-facebook"></i></a>
+                        <a href="https://www.instagram.com/dar1us_7/" target="_blank" rel="noopener" aria-label="Instagram"><i class="lab la-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rejuanulhuq" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="lab la-linkedin"></i></a>
+                        <a href="https://github.com/Rejuanul463" target="_blank" rel="noopener" aria-label="GitHub"><i class="lab la-github"></i></a>
+                        <a href="https://www.artstation.com/dar1us475" target="_blank" rel="noopener" aria-label="ArtStation"><i class="lab la-artstation"></i></a>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- //FOOTER -->
+        </section>
+    </main>
 
-    </div>
-    <!-- /Content wrapper -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Rejuanul Huq Sanny. Built with care.</p>
+    </footer>
 
-    <script src="./Assets/js/aos.js"></script>
-    <script src="./Assets/js/bootstrap.bundle.min.js"></script>
     <script src="./Assets/js/main.js"></script>
 </body>
 
