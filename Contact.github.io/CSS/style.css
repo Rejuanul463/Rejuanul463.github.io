@@ -79,6 +79,11 @@ body{
     background-color: var(--color-base);
 }
 
+.cta .btn-primary {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
 .form {
 
 }

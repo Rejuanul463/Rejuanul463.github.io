@@ -140,6 +140,7 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; }
 
 .cta { text-align: center; padding: 70px 24px; background: linear-gradient(135deg, rgba(124, 92, 255, .18), rgba(34, 211, 238, .1)); }
 .cta h2 { font-size: clamp(1.9rem, 4.5vw, 3.2rem); margin-bottom: 14px; }
+.cta .btn { margin-bottom: 20px; }
 .cta p { color: var(--muted); margin-bottom: 30px; }
 .social-icons { display: flex; justify-content: center; gap: 14px; margin-top: 34px; }
 .social-icons a { width: 46px; height: 46px; display: grid; place-items: center; font-size: 1.4rem; border-radius: 50%; border: 1px solid var(--border); background: var(--surface); transition: transform .25s, background .25s; }
